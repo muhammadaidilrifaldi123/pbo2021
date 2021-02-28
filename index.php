@@ -1,29 +1,32 @@
 <?php
- 
-include('Mahasiswa.php');
+    require_once("Mahasiswa.php");
+    require_once("MahasiswaBaru.php");
 
-$mahasiswa_aidil = new Mahasiswa();
-$mahasiswa_faul = new Mahasiswa();
-$mahasiswa_niko = new Mahasiswa();
- 
-$mahasiswa_aidil->nim = "H1101191007" ;
-$mahasiswa_aidil->nama = "Muhammad Aidil Rifaldi" ;
-$mahasiswa_aidil->tanggal_lahir = "18-12-2000" ;
-$mahasiswa_aidil->jenis_kelamin = "laki-Laki" ;
 
-$mahasiswa_faul->nim = "H1101191046";
-$mahasiswa_faul->nama = "Faul oliber" ;
-$mahasiswa_faul->tanggal_lahir = "27-06-2001";
-$mahasiswa_faul->jenis_kelamin = "Laki-laki";
+    $Aidil = new Mahasiswa("H1101191035", "Muhammad Aidil Rifaldi", "2000-12-18", "Pria");
+    $Niko = new MahasiswaBaru("H1101011035", "Niko", "2002-02-08", "pria", 1234567);
 
-$mahasiswa_niko->nim = "H1101191037";
-$mahasiswa_niko->nama = "nicorallo desca ";
-$mahasiswa_niko->tanggal_lahir = "10-09-2000" ;
-$mahasiswa_niko->jenis_kelamin = "Laki-Laki";
+?>
 
-$mahasiswa_aidil->tampilkanAngkatan();
-$mahasiswa_aidil->tampilkanUmur()  ;
-$mahasiswa_faul->tampilkanAngkatan();
-$mahasiswa_faul->tampilkanUmur() ; 
-$mahasiswa_niko->tampilkanAngkatan();
-$mahasiswa_niko->tampilkanUmur()  ;
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PHP Test</title>
+</head>
+<body>
+    <?php echo "<p>Hello World</p>"; ?>
+    
+    <?php
+        $Aidil -> tampilkanNama ();
+        echo "<br>";
+        $Aidil->tampilkanAngkatan();
+        echo "<br>";
+        $Aidil->tampilkanUmur();
+        echo "<br>";
+        
+    ?>
+</body>
+</html>
