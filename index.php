@@ -3,7 +3,8 @@
     require_once("MahasiswaBaru.php");
 
 
-    $Aidil = new Mahasiswa("H1101191035", "Muhammad Aidil Rifaldi", "2000-12-18", "Pria");
+
+    $Aidil = new Mahasiswa("H1101191035", "Muhammad Aidil Rifaldi", "18-12-2000", "Pria");
     $Niko = new MahasiswaBaru("H1101011035", "Niko", "2002-02-08", "pria", 1234567);
 
 ?>
@@ -20,12 +21,14 @@
     <?php echo "<p>Hello World</p>"; ?>
     
     <?php
-        $Aidil -> tampilkanNama ();
+        
+        echo $Aidil->getNama();
         echo "<br>";
-        $Aidil->tampilkanAngkatan();
+        echo $Aidil->getNim();
         echo "<br>";
-        $Aidil->tampilkanUmur();
+        echo $Aidil->getTanggallahir();
         echo "<br>";
+        echo $Aidil->getJenisKelamin();
         
     ?>
 </body>
