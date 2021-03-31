@@ -1,3 +1,2 @@
-#pemrograman berorientasi objek
-Nim : H1101191007
-Nama: muhammad aidil rifaldi
+# Praktikum PBO 2021
+Nama : Dian Prawira

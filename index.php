@@ -3,7 +3,6 @@
     require_once("MahasiswaBaru.php");
 
 
-
     $Aidil = new Mahasiswa("H1101191035", "Muhammad Aidil Rifaldi", "18-12-2000", "Pria");
     $Niko = new MahasiswaBaru("H1101011035", "Niko", "2002-02-08", "pria", 1234567);
 
