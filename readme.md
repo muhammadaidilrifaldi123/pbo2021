@@ -1,2 +1,3 @@
 # Praktikum PBO 2021
-Nama : Dian Prawira
+Nim  : H1101191007
+Nama : Muhammad Aidil Rifaldi
