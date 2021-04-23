@@ -1,6 +1,6 @@
 <?php
 
-namespace application;
+namespace App;
 class Product
 {
  protected $_type='Book';

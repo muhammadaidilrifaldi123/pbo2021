@@ -1,5 +1,6 @@
 <?php
-namespace application\backend;
+
+namespace App;
 class MyDate
 {
     private $day;
@@ -48,10 +49,4 @@ class MyDate
     }
 }
 
-namespace application\frontend;
-class MyDate{
-    public function tanggal()
-    {
-       echo ('Hari ini tanggal');
-    }
-}
+

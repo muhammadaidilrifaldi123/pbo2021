@@ -1,6 +1,6 @@
 <?php
 
-namespace application;
+namespace App;
 class Mahasiswa extends User {
  protected $nim;
  protected $nama;
