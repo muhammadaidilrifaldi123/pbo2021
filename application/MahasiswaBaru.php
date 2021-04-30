@@ -3,7 +3,7 @@
 namespace App;
 class MahasiswaBaru extends Mahasiswa
 {
-    protected $no_registrasi;
+    public $no_registrasi;
 
 
     function __construct($nim, $nama, $tgl, $jk, $regis){
@@ -15,15 +15,6 @@ class MahasiswaBaru extends Mahasiswa
     }
 
     public function bayarGedung(){
-
-    }
-
-     public function setNoRegistrasi($no_registrasi){
-    $this->no_registrasi = $no_registrasi;
-    }
-
-    public function getNoRegistrasi(){
-    $this->no_registrasi = $no_registrasi;
+       
     }
 }
-?>

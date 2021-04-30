@@ -1,17 +1,24 @@
 <?php
 
 namespace App;
+
+//jika di kasih function final dia tidak bisa menjalan kan function overrding 
 class Mahasiswa extends User {
- protected $nim;
- protected $nama;
- protected $tanggal_lahir;
- protected $jenis_kelamin;
- 
- function __construct($nim,$nama,$tgl,$jk){
+
+ public $nim;
+ public $nama;
+ public $tanggal_lahir;
+ public $jenis_kelamin;
+ const AKTIF = 1;
+ const NONAKTIF = 0;
+ public static $status = self::AKTIF;
+
+ function __construct($nim,$nama,$tgl,$jk,$sks,$bobot){
    $this->nim = $nim;
    $this->nama = $nama;
    $this->tanggal_lahir = $tgl;
    $this->jenis_kelamin = $jk;
+
  }
  
  public function tampilkanAngkatan(){
@@ -26,33 +33,20 @@ class Mahasiswa extends User {
  public function tampilkanNama(){
      echo 'Nama : '.$this->nama. '<br>'. '<br>';
  }
- 
- public function setNim($nim){
-  $this->nim = $nim;
-}
- public function setNama($nama){
-   $this->nama = $nama;
- }
-public function setJenisKelamin($jenis_kelamin){
-  $this->jenis_kelamin = $jenis_kelamin;
-}
-
-public function setTanggalLahir($tanggal_lahir){
-  $this->tanggal_lahir = $tanggal_lahir;
-}
-
- public function getNim(){
-   $this->nim = $nim;
- }
-  public function getNama(){
-    $this->nama = $nama;
-  }
- public function getJenisKelamin(){
-   $this->jenis_kelamin = $jenis_kelamin;
+ //static
+ public static function bergerak(){  
+   echo "agen solusi , bukan perubahan";
  }
 
- public function getTanggalLahir(){
-   $this->tanggal_lahir = $tanggal_lahir;
+ public static function tuntaskan()
+ {
+   self::bergerak();
+   echo "memperbaiki menjadi lebih baik";
+ }
+
+ public static function hitungsks($sks,$bobot){
+  return $sks*$bobot;
+
  }
 
 }
