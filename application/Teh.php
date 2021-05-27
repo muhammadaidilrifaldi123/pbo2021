@@ -8,7 +8,7 @@ class Teh implements Minuman
 {
     public function buat()
     {
-        echo"panaskan air terlebih dahulu";
+        
         echo"siapkan teh dan gula";
         echo"setelah mendidih ,masukkan air panas ke dalam tempat tersebut";
         echo"diamkan selama 5 menit";
